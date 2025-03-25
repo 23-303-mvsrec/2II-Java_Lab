@@ -8,7 +8,7 @@ class ObjectCounter{
 	}
 
 	static int getObjCount(){
-		variable++;    //non static variable cannot be accesed inside the static method
+	//	variable++;    //non static variable cannot be accesed inside the static method
 		return objCount;
 	}
 

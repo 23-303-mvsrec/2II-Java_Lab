@@ -6,7 +6,7 @@ interface A{
 interface B extends A{
 	void method3();
 }
-class c implements A,B extends InterfaceExtends{}
+class c implements A, B {}
 class InterfaceExtends{
 	public void method1(){
 		System.out.println("method1() implementation");

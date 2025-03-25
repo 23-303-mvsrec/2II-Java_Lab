@@ -3,7 +3,7 @@ import java.util.*;
 import java.sql.*;
 
 
-public class StudentDBRetrieval {
+public class Retrieval {
 
     public static void main(String[] args) {
 

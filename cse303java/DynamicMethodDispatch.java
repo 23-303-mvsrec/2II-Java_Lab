@@ -34,7 +34,7 @@ class DynamicMethodDispatch{
                 System.out.println("Object pretends as Parent");
 		System.out.println("variable k = "+p.k);
                 p.method();
-		p.method2();	//Error
+	//	p.method2();	//Error
 
 		gp = new Child();	//Runtime Polymorphism Child object behaves as GrandParent
                 System.out.println("Object pretends as GrandParent");

@@ -13,6 +13,7 @@ public class Student{
 		for(int i=0;i<marks.length;i++){
 			marks[i] = sc.nextInt();
 		}
+		sc.close();
 	}
 	int calTotal(){
 		int sum =0;
