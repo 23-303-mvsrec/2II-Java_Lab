@@ -5,7 +5,7 @@ class MultipleCatch {
         int arr[] = {10, 20, 30};
         String str ="abc";
         try {
-            c = a/b;
+	    c = a/b;
             System.out.println("Result: " + c);
             System.out.println(arr[5]); // This will cause an ArrayIndexOutOfBoundsException
             System.out.println(str.charAt(5)); // This will cause a StringIndexOutOfBoundsException 
