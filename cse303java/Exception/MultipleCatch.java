@@ -3,7 +3,7 @@ class MultipleCatch {
         System.out.println("Main method started");
         int a = 5, b = 0, c = 0;
         int arr[] = { 10, 20, 30 };
-        String str = "abc";
+        String str = "akshay";
         try {
             c = a / b;
             System.out.println("Result: " + c);
