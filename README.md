@@ -8,7 +8,7 @@ Welcome to the `2II-Java_Lab` repository! This is a personal collection of Java 
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage
+- [Usage](#usage)
 - [Contributing](#contributing)
 
 ## Features
