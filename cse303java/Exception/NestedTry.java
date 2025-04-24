@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 // Java program to demonstrate nested try-catch blocks
+=======
+//Java program to demonstrate nested try-catch blocks                                         2451-23-733-303:wq
+
+>>>>>>> 2a441ad (Exceptions :))
 public class NestedTry {
     public static void main(String[] args) {
         try {
@@ -28,3 +33,8 @@ public class NestedTry {
         }
     }
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2a441ad (Exceptions :))
