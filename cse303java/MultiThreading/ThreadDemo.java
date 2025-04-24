@@ -28,7 +28,6 @@ class ThreadDemo{
 		System.out.println("Enter Array Elements: ");
 		for(int i = 0;i<n;i++)
 			arr[i] = sc.nextInt();
-
 		SquareThread st = new SquareThread(arr);
 		st.start();
 		try{

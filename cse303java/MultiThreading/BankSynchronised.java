@@ -39,7 +39,7 @@ class WithdrawThread extends Thread {
 }
 public class BankSynchronised {
     public static void main(String[] args) {
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter initial balance: ");
         int initialBalance = scanner.nextInt();
         Bank bank = new Bank(initialBalance);
