@@ -1,6 +1,6 @@
-package cse303java.langPackage;
+//package cse303java.langPackage;
 
-public class Student {
+class Student {
     String name;
     int rollNo;
     double marks;
@@ -24,6 +24,7 @@ public class Student {
         Student temp = (Student) obj;
         return this.name.equals(temp.name) && this.rollNo == temp.rollNo && this.marks == temp.marks;
     }
+
     public static void main(String[] args) {
         Student student1 = new Student("Alice", 101, 85.5);
         Student student2 = new Student("Bob", 102, 90.0);
@@ -35,5 +36,9 @@ public class Student {
 
         System.out.println("student1 equals student2: " + student1.equals(student2));
         System.out.println("student1 equals student3: " + student1.equals(student3));
+
+        System.out.println("HashCode of student1: " + student1.hashCode());
+        System.out.println("HashCode of student2: " + student2.hashCode());
+        System.out.println("HashCode of student3: " + student3.hashCode());
     }
 }
