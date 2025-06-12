@@ -1,4 +1,6 @@
+package MultiThreading;
 //Java program to demonstrate the use of synchronized keyword
+import java.util.Scanner;
 class Bank {
     int balance;
     Bank(int balance) {
@@ -29,22 +31,25 @@ class WithdrawThread extends Thread {
     public void run() {
         synchronized (bank) {
             bank.withdraw(amount);
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                System.out.println(e);
-            }
+        }
+        // Simulate additional work or delay outside the critical section
+        // to allow other threads to acquire the lock sooner.
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            System.out.println(e);
+            Thread.currentThread().interrupt(); // Restore interrupted status
         }
     }
 }
 public class BankSynchronised {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter initial balance: ");
-        int initialBalance = scanner.nextInt();
-        Bank bank = new Bank(initialBalance);
-        System.out.println("Initial balance: " + initialBalance);
-        WithdrawThread t1 = new WithdrawThread(bank, 500);
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter initial balance: ");
+            int initialBalance = scanner.nextInt();
+            Bank bank = new Bank(initialBalance);
+            System.out.println("Initial balance: " + initialBalance);
+            WithdrawThread t1 = new WithdrawThread(bank, 500);
         WithdrawThread t2 = new WithdrawThread(bank, 700);
         t1.start();
         t2.start();
@@ -55,6 +60,6 @@ public class BankSynchronised {
             System.out.println(e);
         }
         System.out.println("Final balance: " + bank.balance);
-        
+        } // Scanner will be closed automatically here
     }
 }

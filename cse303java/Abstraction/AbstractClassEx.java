@@ -35,7 +35,7 @@ class AbstractClassEx{
 		r.area();
 		t.area();
 		r.concrete();
-	//	t.concrete();	//This is not possible as abstract class cannot be initialised
+	//	t.concrete();	// This is perfectly valid. Calls concrete() method inherited from Figure class.
 
 		f = new Rectangle(5,7);	//Runtime Polymorphism -This is Dynamic Method Dispatch
 		f.area();
