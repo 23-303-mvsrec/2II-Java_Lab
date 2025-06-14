@@ -41,3 +41,24 @@ class LinkedList1{
 		System.out.println("names after clear: "+names);		
 	}
 }
+/*
+ * Vaishnavi Vamshidhar Akshay Sairam 
+names: [Vaishnavi, Vamshidhar, Akshay, Sairam]
+Abhinav Vaishnavi Vamshidhar Akshay Sairam Chandrika 
+names after adding first and last: [Abhinav, Vaishnavi, Vamshidhar, Akshay, Sairam, Chandrika]
+names.getFirst(): Abhinav
+names.getLast(): Chandrika
+names.element(): Abhinav
+names.get(2): Vamshidhar
+names.size(): 6
+names.isEmpty(): false
+names.contains("Akshay"): true
+names.indexOf("Akshay"): 3
+names.lastIndexOf("Akshay"): 3
+names.removeFirst(): Abhinav
+names.removeLast(): Chandrika
+names.remove(2): Akshay
+names after removals: [Vaishnavi, Vamshidhar, Sairam]
+names.clear(): 
+names after clear: []
+ */

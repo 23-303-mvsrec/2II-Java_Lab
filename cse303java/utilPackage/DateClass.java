@@ -14,13 +14,18 @@ public class DateClass {
         System.out.println("Date 1: " + date1);
         System.out.println("Date 2: " + date2);
         //using after method
-        if (date1.after(date2)) {
-            System.out.println("Date 1 is after Date 2");
-        } else {
-            System.out.println("Date 1 is not after Date 2");
-        }
+        boolean a = date1.after(date2);
+        System.out.println("Date 1 is after Date 2: "+a);
+        
         //using clone method
         Date clonedDate = (Date) date1.clone();
         System.out.println("Cloned Date: " + clonedDate);
+
+        //use of before() to check date2 is after date1
+        boolean b = date2.before(date1);
+        System.out.println("Is date2 is before date1 :"+b);
+
+        Date d1 = new Date(97,10,27);
+        Date d2 = new Date(97,6,12);
     }
 }

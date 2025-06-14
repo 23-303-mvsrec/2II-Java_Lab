@@ -28,3 +28,11 @@ public class PriorityQueue1 {
 
     }
 }
+/*
+ * head: C++
+head: C++
+Iterating over elements:
+C++ JavaScript Java Python 
+After removing C++: [Java, JavaScript, Python]
+After polling: [JavaScript, Python]
+ */

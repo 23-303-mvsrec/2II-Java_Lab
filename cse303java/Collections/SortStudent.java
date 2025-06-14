@@ -61,3 +61,20 @@ public class SortStudent {
         }
     }
 }
+/*
+ * Sorted by Name:
+Alice, Age: 20, GPA: 3.5
+Bob, Age: 22, GPA: 3.8
+Charlie, Age: 21, GPA: 3.2
+
+Sorted by Age:
+Alice, Age: 20, GPA: 3.5
+Charlie, Age: 21, GPA: 3.2
+Bob, Age: 22, GPA: 3.8
+
+Sorted by GPA:
+Charlie, Age: 21, GPA: 3.2
+Alice, Age: 20, GPA: 3.5
+Bob, Age: 22, GPA: 3.8
+
+ */
