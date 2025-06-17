@@ -15,3 +15,8 @@ public class CustomDateFormatExample {
         System.out.println("Formatted Date1: " + formattedDate1);
     }
 }
+/*
+ * System Date: Sat Jun 14 11:28:51 IST 2025
+Formatted Date: Sat 14-06-2025 11:28:51
+Formatted Date1: 14/06/2025
+ */
