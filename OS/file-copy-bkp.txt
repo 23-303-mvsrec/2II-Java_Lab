@@ -1,0 +1,1 @@
+This is from source file: file-copy.txt,where we will copy this content into destination file through file-copy.c
