@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase</title>
+</head>
+<body bgcolor="#F4F2E8">
+    <center>
+        <h2>Shopping Cart</h2>
+        <form>
+            Select product :
+            <select name="product">
+                <option value="smartphone">Smartphone - XYZ</option>
+                <option value="laptop">Laptop - ABC</option>
+                <option value="tshirt">T-Shirt - Red</option>
+                <option value="refrigerator">Refrigerator - CoolTech</option>
+            </select><br><br>
+            Enter Quantity: <input type="number" name="quantity"><br><br>
+            <h3>Shipping Details</h3>
+            Enter customer name: <input type="text" name="customer_name"><br><br>
+            Enter customer emailid: <input type="email" name="customer_emailid"><br><br>
+            Enter customer shipping address: <br>
+            <textarea name="shipping_address" rows="5" cols="30"></textarea><br><br>
+            <h3>Billing Information</h3>
+            Enter payment mode:
+            <input type="radio" name="payment_mode" value="cash">Cash on Delivery
+            <input type="radio" name="payment_mode" value="credit">Credit/Debit Card
+            <input type="radio" name="payment_mode" value="upi">UPI payment/Net Banking<br><br>
+            <h3>Confirm Processing</h3>
+            <input type="submit" value="Confirm">
+            <input type="reset" value="Clear">
+        </form>
+    </center>
+</body>
+</html>
+
