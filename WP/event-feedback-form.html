@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Feedback Form</title>
+</head>
+<body bgcolor="lightgreen">
+    <center>
+        <h2><b><u>College Event Feedback Form</u></b></h2>
+        <p>Please share your feedback about the recent college event.</p>
+
+        <form action="submit_feedback.php" method="post">
+            <table cellpadding="5">
+                <tr>
+                    <td>Your Name:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+
+                <tr>
+                    <td>Event Attended:</td>
+                    <td>
+                        <select name="event">
+                            <option value="cultural">Cultural Fest</option>
+                            <option value="sports">Sports Meet</option>
+                            <option value="seminar">Seminar</option>
+                            <option value="workshop">Workshop</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top">Rate the Event:</td>
+                    <td>
+                        <input type="radio" name="rating" value="excellent"> Excellent <br>
+                        <input type="radio" name="rating" value="good"> Good <br>
+                        <input type="radio" name="rating" value="average"> Average <br>
+                        <input type="radio" name="rating" value="poor"> Poor
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top">Best Part of the Event:</td>
+                    <td>
+                        <input type="checkbox" name="best" value="organization"> Organization <br>
+                        <input type="checkbox" name="best" value="speakers"> Speakers/Guests <br>
+                        <input type="checkbox" name="best" value="activities"> Activities <br>
+                        <input type="checkbox" name="best" value="hospitality"> Hospitality
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top">Your Suggestions:</td>
+                    <td><textarea rows="5" cols="40" name="suggestions"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit Feedback">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
