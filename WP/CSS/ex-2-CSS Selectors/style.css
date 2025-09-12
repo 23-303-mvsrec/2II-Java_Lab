@@ -1,0 +1,62 @@
+
+* {
+
+  font-family: Arial;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+p {
+
+  color: blue;
+
+}
+
+
+.highlight {
+
+  background-color: yellow;
+
+}
+
+
+#main-title {
+
+  color: red;
+
+}
+
+
+h1, h2, p ,input{
+
+  text-align: center;
+
+}
+
+div p {
+
+  color: green;
+
+}
+
+
+b:hover
+
+{
+
+  color:red;
+
+}
+
+input:focus
+
+{
+
+   font-size:20pt;
+
+}
+
