@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table using CSS</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header-row {
+            border-top: 4px solid black;
+            /* thick top border */
+            border-bottom: 2px dotted gray;
+            /* dotted divider */
+            background-color: #333;
+            color: white;
+        }
+
+        .data-row {
+            border-bottom: 2px dotted gray;
+            /* dotted divider for each row */
+        }
+
+        .last-row {
+            border-bottom: 4px solid black;
+            /* thick bottom border */
+        }
+
+        /* Remove left/right borders */
+        table,
+        th,
+        td {
+            border-left: none;
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr class="header-row">
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr class="data-row">
+            <td>101</td>
+            <td>Ravi</td>
+            <td>Math</td>
+            <td>85</td>
+        </tr>
+        <tr class="data-row">
+            <td>102</td>
+            <td>Priya</td>
+            <td>Science</td>
+            <td>90</td>
+        </tr>
+        <tr class="data-row">
+            <td>103</td>
+            <td>Arjun</td>
+            <td>English</td>
+            <td>78</td>
+        </tr>
+        <tr class="data-row last-row">
+            <td>104</td>
+            <td>Kavya</td>
+            <td>History</td>
+            <td>88</td>
+        </tr>
+    </table>
+</body>
+
+</html>
